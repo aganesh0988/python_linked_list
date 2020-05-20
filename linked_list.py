@@ -1,4 +1,4 @@
-'''
+"""
 ============================================================================
 Implementation Exercise: Singly Linked List
 ============================================================================
@@ -22,7 +22,7 @@ Phase 2:
 3. Returning the list size
 4. Updating a list node's value at a specific index
 5. Removing a node value from the list at a specific index
-'''
+"""
 
 # Phase 1
 
@@ -30,55 +30,55 @@ Phase 2:
 class Node:
   # TODO: Set the `_value` `_next` node instance variables
   def __init__(self, value):
-
+    pass
 
 # TODO: Implement a Singly Linked List class here
 class LinkedList:
   # TODO: Set the `_head` node, `_tail` node, and list `_length` instance variables
   def __init__(self):
-
+    pass
 
   # TODO: Implement the get_node method here
   def get_node(self, index):
-
+    pass
 
   # TODO: Implement the add_to_tail method here
   def add_to_tail(self, value):
-
+    pass
 
   # TODO: Implement the add_to_head method here
   def add_to_head(self, value):
-
+    pass
 
   # TODO: Implement the remove_head method here
   def remove_head(self):
-
+    pass
 
   # TODO: Implement the remove_tail method here
   def remove_tail(self):
-
+    pass
 
 # Phase 2
 
   # TODO: Implement the contains_value method here
   def contains_value(self, target):
-
+    pass
 
   # TODO: Implement the insert_value method here
   def insert_value(self, index, value):
-
+    pass
 
   # TODO: Implement the size method here
   def size(self):
-
+    pass
 
   # TODO: Implement the update_value method here
   def update_value(self, index, value):
-
+    pass
 
   # TODO: Implement the remove_node method here
   def remove_node(self, index):
-
+    pass
 
 # Phase 1 Manual Testing:
 
