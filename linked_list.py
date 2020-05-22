@@ -76,7 +76,7 @@ class LinkedList:
 
   # TODO: Implement the update_value method here
   def update_value(self, position, value):
-
+    pass
 
   # TODO: Implement the remove_node method here
   def remove_node(self, position):
