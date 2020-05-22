@@ -82,7 +82,7 @@ class LinkedList:
   def remove_node(self, position):
     pass
 
-  # TODO: Format the list as a string whenever `print()` is invoked
+  # TODO: Implement the __str__ method here
   def __str__(self):
     pass
 
