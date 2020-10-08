@@ -130,11 +130,29 @@ class LinkedList:
     # TODO: Implement the insert_value method here
 
     def insert_value(self, position, value):
-        pass
+        if position < 0 or position >= self._length:
+            return False
+        elif position == 0:
+            self.add_to_head(value)
+            return True
+        elif position is self._length:
+            self.add_to_tail(value)
+            return True
+
+        new_node = Node(value)
+        previous_node = self.get_node(position-1)
+        node_to_move = previous_node._next
+        previous_node._next = new_node
+        new_node._next = node_to_move
 
     # TODO: Implement the update_value method here
+
     def update_value(self, position, value):
-        pass
+        if position < 0 or position >= self._length:
+            return False
+        else:
+            self.get_node(position)._value = value
+            return True
 
     # TODO: Implement the remove_node method here
     def remove_node(self, position):
@@ -190,15 +208,15 @@ class LinkedList:
 # # 1. Test whether the list contains_value a value
 linked_list = LinkedList()
 linked_list.add_to_head('new head node')
-print(linked_list.contains_value('new head node'))      # True
-print(linked_list.contains_value('App Academy node'))   # False
+# print(linked_list.contains_value('new head node'))      # True
+# print(linked_list.contains_value('App Academy node'))   # False
 
 # # 2. Test inserting a node value into the list at a specific position
-# linked_list.insert_value(0, 'hello!')
+linked_list.insert_value(0, 'hello!')
 # print(linked_list.get_node(0)._value)                   # `hello!`
 
 # # 3. Test updating a list node's value at a specific position
-# linked_list.update_value(0, 'goodbye!')
+linked_list.update_value(0, 'goodbye!')
 # print(linked_list.get_node(0)._value)                   # `goodbye!`
 
 # # 4. Test removing a node value from the list at a specific position
